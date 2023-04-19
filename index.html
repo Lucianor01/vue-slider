@@ -16,11 +16,19 @@
 
 <body>
     <div id="app">
+        <!--! CONTAINER -->
         <div class="container" @mouseover="stopScroll" @mouseleave="autoScroll">
+            <!--* CONTAINER IMMAGINE PRINCIPALE -->
             <div class="item">
                 <!-- <img src="./assets/img/01.webp" alt=""> -->
                 <img v-bind:src="slides[currentActive].image" alt="">
+                <!--* CONTAINER TEXT -->
+                <div class="text">
+                    <h2>{{slides[currentActive].title}}</h2>
+                    <span>{{slides[currentActive].text}}</span>
+                </div>
             </div>
+            <!--* CONTAINER THUMBS -->
             <div class="thumbs position-relative">
                 <!-- <div class="thumb active">
                     <img src="./assets/img/01.webp" alt="">

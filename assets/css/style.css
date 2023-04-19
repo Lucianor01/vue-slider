@@ -33,11 +33,14 @@ body{
 }
 
 .item .text {
+    width: 90%;
+    padding: 10px;
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 10px;
     text-align: right;
     color: white;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .thumbs {
