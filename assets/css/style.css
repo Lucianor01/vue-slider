@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: lightslategrey;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -41,7 +45,7 @@
 
 .thumb {
     height: calc((300px) / 5);
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .thumb img {
@@ -55,23 +59,32 @@
     opacity: 1;
 }
 
-.prev,
-.next {
-    width: 20px;
-    height: 20px;
-    margin: 10px 0;
-    border-radius: 50%;
-    background: #ccc;
+.prev {
     position: absolute;
+    top: 5px;
     left: 50%;
     transform: translate(-50%);
-    cursor: pointer;
-    z-index: 999;
+    font-size: 12px;
+    z-index: 1;
 }
 
 .next {
-    bottom: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 12px;
+    z-index: 1;
 }
+
+.prev i,
+.next i {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 /*
 EXTRA: in questo esempio gli accordion vengono creati
@@ -79,7 +92,7 @@ usando 2 bordi di un quadratino ruotato di 45 gradi
 In una versione base si possono usare delle icone
 oppure i caratteri ∧ (&and;) e ∨ (&or;)
  */
-.prev::after {
+/* .prev::after {
     content: '';
     width: 10px;
     height: 10px;
@@ -103,4 +116,4 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     bottom: 35%;
     left: 50%;
     transform: translate(-50%) rotate(135deg);
-}
+} */
