@@ -5,11 +5,15 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background-color: lightslategrey;
 }
 
 .container {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +50,7 @@ body{
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.2;
+    cursor: pointer;
 }
 
 .thumb img {
