@@ -45,11 +45,11 @@
                     <img v-bind:src="element.image" v-bind:alt="element.title">
                 </div>
                 <!--* PREV -->
-                <div class="prev">
+                <div class="prev" @click="prev">
                     <i class="fa-solid fa-chevron-up"></i>
                 </div>
                 <!--* NEXT -->
-                <div class="next">
+                <div class="next" @click="next">
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div>
