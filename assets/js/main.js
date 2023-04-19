@@ -42,6 +42,9 @@ createApp({
             if (this.currentActive > this.slides.length -1) {
                 this.currentActive = 0;
             }
+        },
+        changeImage(i){
+            this.currentActive = i
         }
     },
 }).mount('#app')
